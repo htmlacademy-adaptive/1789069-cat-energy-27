@@ -1,0 +1,43 @@
+.promo {
+  width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+.promo__header {
+  box-sizing: border-box;
+  position: relative;
+  height: 302px;
+  padding: 27px 35px;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../img/index-background-promo.png");
+  margin-bottom: 138px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 167px;
+    width: 280px;
+    height: 270px;
+    background-image: url("../../img/index-cat-nutrition-promo.png");
+  }
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.promo__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
