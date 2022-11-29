@@ -1,0 +1,41 @@
+.more-products {
+  padding-top: 53px;
+  text-align: center;
+}
+
+.more-products__description {
+  position: relative;
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 23px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/plus.svg");
+  }
+}
+
+.more-products__text {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.more-products__button {
+  background-color: #f2f2f2;
+  color: #444444;
+}

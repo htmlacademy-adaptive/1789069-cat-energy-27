@@ -4,6 +4,10 @@
 }
 
 .application__title {
+  display: inline-flex;
+  align-items: center;
+  gap: 19px;
+  position: relative;
   margin: 0;
   margin-bottom: 29px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -13,6 +17,34 @@
   line-height: 37px;
   color: #000000;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+}
+
+.application--weight-loss .application__title::after {
+  content: "";
+  position: absolute;
+  min-width: 36px;
+  min-height: 50px;
+  background-image: url("../../img/cat-slim.png");
+  left: 7px;
+  bottom: 3px;
+}
+
+.application--weight-gain .application__title::after {
+  content: "";
+  position: absolute;
+  min-width: 67px;
+  min-height: 28px;
+  background-image: url("../../img/cat-pro.png");
+  left: -10px;
+  bottom: 11px;
 }
 
 .application__description {

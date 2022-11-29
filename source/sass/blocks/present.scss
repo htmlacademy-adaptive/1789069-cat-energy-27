@@ -1,0 +1,28 @@
+.present {
+  box-sizing: border-box;
+  width: 280px;
+  height: 290px;
+  padding: 187px 61px 43px 58px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/catalog-background-present.png");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.present__description {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 47%;
+    top: -48px;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/icon-present.svg");
+    transform: translate(-50%, -100%);
+  }
+}
