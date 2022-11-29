@@ -30,10 +30,12 @@
 }
 
 .example__results-item-wrapper {
+  box-sizing: border-box;
+  width: 124px;
   display: flex;
   flex-direction: column-reverse;
   gap: 7.5px;
-  padding: 14.5px 42.5px 0 42.5px;
+  /* padding: 14.5px 42.5px 0 42.5px; */
   outline: 1px solid #cdcdcd;
 }
 
@@ -61,5 +63,6 @@
   font-size: 14px;
   line-height: 20px;
   color: #000000;
+  text-align: center;
   text-transform: uppercase;
 }
