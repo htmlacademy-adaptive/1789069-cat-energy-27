@@ -87,7 +87,7 @@
   top: 167px;
   width: 280px;
   height: 270px;
-  background-image: url("../../img/index-cat-nutrition-promo.png");
+  background-image: url("../img/index-cat-nutrition-promo.png");
 }
 
 .promo__title {
@@ -160,7 +160,7 @@
   position: absolute;
   min-width: 36px;
   min-height: 50px;
-  background-image: url("../../img/cat-slim.png");
+  background-image: url("../img/cat-slim.png");
   left: 7px;
   bottom: 3px;
 }
@@ -170,7 +170,7 @@
   position: absolute;
   min-width: 67px;
   min-height: 28px;
-  background-image: url("../../img/cat-pro.png");
+  background-image: url("../img/cat-pro.png");
   left: -10px;
   bottom: 11px;
 }
@@ -210,7 +210,7 @@
   right: 8px;
   width: 24px;
   height: 12px;
-  background-image: url("../../img/arrow.svg");
+  background-image: url("../img/arrow.svg");
 }
 
 .applications {
@@ -256,25 +256,25 @@
 }
 
 .advantage--useful .advantage__description::before {
-  background-image: url("/img/icon-leaf.svg");
+  background-image: url("../img/icon-leaf.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .advantage--powder .advantage__description::before {
-  background-image: url("/img/icon-powder.svg");
+  background-image: url("../img/icon-powder.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .advantage--nutration .advantage__description::before {
-  background-image: url("/img/icon-eat.svg");
+  background-image: url("../img/icon-eat.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .advantage--time .advantage__description::before {
-  background-image: url("/img/icon-time.svg");
+  background-image: url("../img/icon-time.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -587,7 +587,7 @@
   transform: translate(-50%, -50%);
   width: 30px;
   height: 30px;
-  background-image: url("../../img/plus.svg");
+  background-image: url("../img/plus.svg");
 }
 
 .more-products__text {
@@ -704,7 +704,7 @@
   width: 280px;
   height: 290px;
   padding: 187px 61px 43px 58px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/catalog-background-present.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present.png");
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -723,7 +723,7 @@
   top: -48px;
   width: 78px;
   height: 80px;
-  background-image: url("../../img/icon-present.svg");
+  background-image: url("../img/icon-present.svg");
   transform: translate(-50%, -100%);
 }
 
