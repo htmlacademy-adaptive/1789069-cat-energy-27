@@ -1,0 +1,68 @@
+.example {
+  padding: 25px 20px 40px 20px;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__results-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  text-align: center;
+}
+
+.example__results-item-wrapper {
+  box-sizing: border-box;
+  width: 124px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 7.5px;
+  /* padding: 14.5px 42.5px 0 42.5px; */
+  outline: 1px solid #cdcdcd;
+}
+
+.example__result-description {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.example__result-value {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.example__price {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}

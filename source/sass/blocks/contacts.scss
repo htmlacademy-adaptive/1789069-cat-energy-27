@@ -1,0 +1,27 @@
+.contacts {
+  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 139px);
+  gap: 2px;
+  background-color: #ffffff;
+}
+
+.contacts__title {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-style: normal;
+  line-height: 20px;
+}
+
+.contacts--alt-bg {
+  background-color: #f2f2f2;
+}
