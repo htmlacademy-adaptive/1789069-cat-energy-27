@@ -256,25 +256,25 @@
 }
 
 .advantage--useful .advantage__description::before {
-  background-image: url("../../img/icon-leaf.svg");
+  background-image: url("/img/icon-leaf.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .advantage--powder .advantage__description::before {
-  background-image: url("../../img/icon-powder.svg");
+  background-image: url("/img/icon-powder.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .advantage--nutration .advantage__description::before {
-  background-image: url("../../img/icon-eat.svg");
+  background-image: url("/img/icon-eat.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .advantage--time .advantage__description::before {
-  background-image: url("../../img/icon-time.svg");
+  background-image: url("/img/icon-time.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
