@@ -1,12 +1,11 @@
 @import "../global/mixins.scss";
+@import "../global/variables.scss";
 
 .nav-list {
-  /* margin: 0;
-  padding: 0;
-  list-style-type: none; */
   @include normalize-list();
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .nav-list__item {
@@ -33,4 +32,53 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-list {
+    max-width: 480px;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .nav-list__link {
+    position: relative;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .nav-list__link--current::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    background-color: #68b738;
+  }
+
+  .nav-list__item::before {
+    content: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-list {
+    max-width: 680px;
+  }
+
+  .nav-list__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .nav-list--index-nav-list .nav-list__link {
+    color: #ffffff;
+  }
+
+  .nav-list--index-nav-list .nav-list__link--current::before {
+    background-color: #ffffff;
+  }
 }

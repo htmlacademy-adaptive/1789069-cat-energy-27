@@ -1,3 +1,4 @@
+@import "../global/variables.scss";
 @import "../global/mixins.scss";
 
 .social {
@@ -5,8 +6,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 24px;
 }
 
 .social__icon {
   fill: #666666;
+}
+
+@media (min-width: $tablet-width) {
+  .socail {
+    max-width: 132px;
+  }
 }

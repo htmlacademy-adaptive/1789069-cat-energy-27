@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .promo {
   display: flex;
   flex-direction: column;
@@ -7,7 +9,7 @@
   text-align: center;
   background-image: url("../img/index-cat-nutrition-promo.png"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-promo.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: center 167px, 0 0, 0 0;
+  background-position: 0 167px, 0 0, 0 0;
   background-size: auto, 320px 302px, auto;
 }
 
@@ -31,4 +33,65 @@
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding: 0 30px 526px 30px;
+    background-image: url("../img/index-cat-nutrition-promo.png");
+    background-position: center 200px;
+    text-align: left;
+  }
+
+  .promo__header {
+    margin-bottom: 49px;
+  }
+
+  .promo__title {
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+
+  .promo__description {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  .promo__button {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    position: relative;
+    padding: 82px 830px 267px 190px;
+    background-image: url("../img/index-cat-nutrition-promo.png");
+    background-position: center 0;
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      right: 0;
+      top: -141px;
+      min-width: 720px;
+      min-height: 694px;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-promo-desk.png");
+      background-repeat: no-repeat;
+      background-size: 720px 694px;
+      background-position: right;
+    }
+  }
+
+  .promo__title {
+    margin-bottom: 40px;
+  }
+
+  .promo__header {
+    margin-bottom: 52px;
+  }
 }

@@ -1,7 +1,37 @@
+@import "../global/variables.scss";
+
 .header {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
 }
 
 .header__logo {
+  display: flex;
+  align-items: center;
+  gap: 57px;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 30px 64px 30px;
+  }
+
+  .header__logo {
+    gap: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding: 53px 110px 29px 110px;
+  }
+
+  .header__logo {
+    gap: 14px;
+  }
 }

@@ -1,6 +1,7 @@
 @import "../global/mixins.scss";
 
 .additional-products {
+  padding: 0 20px 35px 20px;
   overflow: hidden;
 }
 
@@ -59,6 +60,3 @@
   }
 }
 
-.additional-products__present {
-  margin-bottom: 35px;
-}

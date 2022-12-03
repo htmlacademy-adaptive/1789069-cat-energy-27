@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .application {
   padding: 30px 20px 18px 20px;
   background-color: #f2f2f2;
@@ -32,7 +34,7 @@
   position: absolute;
   min-width: 36px;
   min-height: 50px;
-  background-image: url("../img/cat-slim.png");
+  background-image: url("../img/cat-slim.svg");
   left: 7px;
   bottom: 3px;
 }
@@ -42,7 +44,7 @@
   position: absolute;
   min-width: 67px;
   min-height: 28px;
-  background-image: url("../img/cat-pro.png");
+  background-image: url("../img/cat-pro.svg");
   left: -10px;
   bottom: 11px;
 }
@@ -84,5 +86,81 @@
     width: 24px;
     height: 12px;
     background-image: url("../img/arrow.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .application {
+    padding: 77px 316px 53px 52px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: 62px;
+      top: 92px;
+      width: 200px;
+      height: 200px;
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+  }
+
+  .application__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .application--weight-loss .application__title::after {
+    content: none;
+  }
+
+  .application--weight-gain .application__title::after {
+    content: none;
+  }
+
+  .application--weight-loss::after {
+    position: absolute;
+    content: "";
+    right: 92px;
+    top: 81px;
+    width: 140px;
+    height: 194px;
+    background-image: url("../../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-size: 140px 194px;
+  }
+
+  .application--weight-gain::after {
+    position: absolute;
+    content: "";
+    right: 28px;
+    top: 135px;
+    width: 268px;
+    height: 112px;
+    background-image: url("../../img/cat-pro.svg");
+    background-size: 268px 112px;
+  }
+
+  .application__description {
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .application__link {
+    padding: 4px 57px 4px 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

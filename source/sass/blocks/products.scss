@@ -1,5 +1,9 @@
 @import "../global/mixins.scss";
 
+.products {
+  padding: 0 20px 50px 20px;
+}
+
 .products__title {
   position: relative;
   margin: 0;
@@ -46,7 +50,6 @@
 
 .products__more-products {
   position: relative;
-  margin-bottom: 50px;
 
   &::after {
     position: absolute;

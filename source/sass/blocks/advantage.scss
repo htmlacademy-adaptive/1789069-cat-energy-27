@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .advantage__description {
   position: relative;
   display: inline-flex;
@@ -35,4 +37,15 @@
   background-image: url("../img/icon-time.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

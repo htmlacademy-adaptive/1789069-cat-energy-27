@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .contacts {
   padding: 26px 20px;
   display: grid;
@@ -24,4 +26,23 @@
 
 .contacts--alt-bg {
   background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 56px 70px;
+    grid-template-columns: 180px 160px;
+    gap: 290px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
 }
