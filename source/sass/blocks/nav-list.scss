@@ -1,6 +1,3 @@
-@import "../global/mixins.scss";
-@import "../global/variables.scss";
-
 .nav-list {
   @include normalize-list();
   display: flex;

@@ -1,8 +1,7 @@
-@import "../global/mixins.scss";
-
 .additional-products {
-  padding: 0 20px 35px 20px;
-  overflow: hidden;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 0 35px 0;
 }
 
 .additional-products__title {
@@ -60,3 +59,48 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .additional-products {
+    width: 708px;
+    padding: 0 0 76px 0;
+  }
+
+  .additional-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      margin-left: 35px;
+    }
+  }
+
+  .additional-products__list {
+    gap: 0;
+    margin-bottom: 97px;
+  }
+
+  .additional-products__item::after {
+    content: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    width: 1220px;
+  }
+
+  .additional-products__wrapper {
+    display: grid;
+    grid-template-columns: 894px 245px;
+    gap: 79px;
+  }
+
+  .additional-products__list {
+    margin-bottom: 0;
+  }
+}

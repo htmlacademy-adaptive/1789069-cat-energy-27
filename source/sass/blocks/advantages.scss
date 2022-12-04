@@ -1,8 +1,7 @@
-@import "../global/variables.scss";
-@import "../global/mixins.scss";
-
 .advantages {
-  padding: 0 20px 49px 20px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 0 49px 0;
 }
 
 .advantages__title {
@@ -25,7 +24,8 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding: 0 30px 90px 30px;
+    width: 708px;
+    padding: 0 0 90px 0;
     position: relative;
 
     &::after {
@@ -49,5 +49,21 @@
     display: grid;
     grid-template-columns: 247px 249px;
     gap: 37px 153px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1220px;
+    padding: 0 0 69px 0;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .advantages__list {
+    grid-template-columns: 230px 246px 248px 250px;
+    gap: 75px;
   }
 }

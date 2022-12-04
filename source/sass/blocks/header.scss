@@ -1,24 +1,25 @@
-@import "../global/variables.scss";
-
 .header {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 10px 0 17px 0;
 }
 
 .header__logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 57px;
   text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
   .header {
+    width: 708px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 30px 64px 30px;
+    padding: 24px 0 0 0;
   }
 
   .header__logo {
@@ -28,7 +29,8 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    padding: 53px 110px 29px 110px;
+    width: 1220px;
+    padding: 53px 0 0 0;
   }
 
   .header__logo {

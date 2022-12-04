@@ -1,5 +1,3 @@
-@import "../global/variables.scss";
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -57,5 +55,11 @@
     &::after {
       content: none;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 57px 110px 58px 110px;
   }
 }
