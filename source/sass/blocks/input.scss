@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .input {
   width: 100%;
   font: inherit;
@@ -7,4 +9,45 @@
   color: #444444;
   border: none;
   outline: 1px solid #e7e7e7;
+}
+
+.input--cat {
+  padding: 14px 20px;
+}
+
+.input--owner-cat {
+  padding: 15px;
+}
+
+.input--comment {
+  box-sizing: border-box;
+  min-height: 150px;
+  resize: none;
+  padding: 9px 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .input--cat {
+    padding: 11px 20px;
+  }
+
+  .input--owner-cat {
+    padding: 11px 20px;
+  }
+
+  .input--comment {
+    padding: 10px 20px;
+    min-height: 174px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input--comment {
+    padding: 10px 19px;
+  }
 }

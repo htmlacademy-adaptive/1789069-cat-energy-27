@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .product-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);

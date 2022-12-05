@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .button {
   display: inline-block;
   padding: 7px 44px;
@@ -44,5 +46,17 @@
   .button--more-products {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .button--form {
+    padding: 14px 45px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--form {
+    padding: 14px 188px;
   }
 }
