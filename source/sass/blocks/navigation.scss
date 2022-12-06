@@ -1,0 +1,7 @@
+@import "../global/variables.scss";
+
+@media (min-width: $tablet-width) {
+  .navigation__toggle {
+    display: none;
+  }
+}

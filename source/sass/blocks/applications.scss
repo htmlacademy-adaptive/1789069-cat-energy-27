@@ -1,6 +1,27 @@
+@import "../global/variables.scss";
+
 .applications {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 20px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .applications {
+    width: 708px;
+    gap: 30px;
+    padding: 0 0 45px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .applications {
+    width: 1220px;
+    flex-direction: row;
+    gap: 80px;
+    padding-bottom: 71px;
+  }
 }

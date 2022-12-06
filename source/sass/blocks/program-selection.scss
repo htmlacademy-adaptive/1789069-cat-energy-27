@@ -1,4 +1,8 @@
+@import "../global/variables.scss";
+
 .program-selection {
+  width: 280px;
+  margin: 0 auto;
   padding: 27px 0 32px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -17,7 +21,44 @@
 .program-selection__description {
   margin: 0;
   margin-bottom: 39px;
+  padding-right: 54px;
   font-size: 14px;
   line-height: 18px;
+  color: #000000;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    width: 708px;
+    padding: 64px 40px 72px 37px;
+  }
+
+  .program-selection__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  .program-selection__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    padding-right: 345px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection {
+    width: 1220px;
+    padding: 73px 0 82px 0;
+  }
+
+  .program-selection__title {
+    margin-bottom: 56px;
+  }
+
+  .program-selection__description {
+    padding-right: 897px;
+  }
 }

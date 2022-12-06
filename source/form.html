@@ -17,19 +17,17 @@
       <button class="navigation__toggle">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <div class="navigation__wrapper">
-        <ul class="navigation__list nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--current" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="navigation__list nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link nav-list__link--current" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
@@ -38,58 +36,62 @@
       <h2 class="program-selection__title">Подбор программы</h2>
       <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__group form__group--cat">
-          <legend class="visually-hidden">Данные кота.</legend>
-          <label class="form__control">
-            <span class="form__label">Имя:<sup>*</sup></span>
-            <input class="form__input input" type="text" name="name" placeholder="Барсик">
-          </label>
-          <label class="form__control">
-            <span class="form__label">Вес(кг):<sup>*</sup></span>
-            <input class="form__input input" type="text" name="weight" placeholder="7">
-          </label>
-          <label class="form__control">
-            <span class="form__label">Возраст(лет):</span>
-            <input class="form__input input" type="text" name="age" placeholder="7">
-          </label>
-        </fieldset>
-        <fieldset class="form__group form__group--purpose">
-          <legend class="visually-hidden">Цель покупки питания для кота.</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <label class="form__control">
-                <input class="form__input" type="radio" name="purpose" checked>
-                <span class="form__label">Похудение</span>
-              </label>
-            </li>
-            <li class="form__item">
-              <label class="form__control">
-                <input class="form__input" type="radio" name="purpose">
-                <span class="form__label">Набор массы</span>
-              </label>
-            </li>
-            <li class="form__item">
-              <label class="form__control">
-                <input class="form__input" type="radio" name="purpose">
-                <span class="form__label">Не знаю (нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__form-group-cat-and-purpose-wrapper">
+          <fieldset class="form__group form__group--cat">
+            <legend class="visually-hidden">Данные кота.</legend>
+            <label class="form__control">
+              <span class="form__label">Имя:<sup>*</sup></span>
+              <input class="form__input input input--cat" type="text" name="name" placeholder="Барсик">
+            </label>
+            <label class="form__control">
+              <span class="form__label">Вес(кг):<sup>*</sup></span>
+              <input class="form__input input input--cat" type="text" name="weight" placeholder="7">
+            </label>
+            <label class="form__control">
+              <span class="form__label">Возраст(лет):</span>
+              <input class="form__input input input--cat" type="text" name="age" placeholder="7">
+            </label>
+          </fieldset>
+          <fieldset class="form__group form__group--purpose">
+            <legend class="visually-hidden">Цель покупки питания для кота.</legend>
+            <ul class="form__list form__list--purpose">
+              <li class="form__item">
+                <label class="form__control">
+                  <input class="form__input" type="radio" name="purpose" value="loss" checked>
+                  <span class="form__label">Похудение</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__control">
+                  <input class="form__input" type="radio" name="purpose" value="gain">
+                  <span class="form__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__control">
+                  <input class="form__input" type="radio" name="purpose" value="advise">
+                  <span class="form__label">Не знаю (нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__group form__group--owner-cat">
           <legend class="form__title">Контактные данные (владельца кота)</legend>
-          <label class="form__control">
-            <span class="form__label">E-mail:<sup>*</sup></span>
-            <input class="form__input input" type="email" name="email" placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="form__control">
-            <span class="form__label">Телефон:<sup>*</sup></span>
-            <input class="form__input input" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-          </label>
+          <div class="form__controls-owner-cat-wrapper">
+            <label class="form__control">
+              <span class="form__label">E-mail:<sup>*</sup></span>
+              <input class="form__input input input--owner-cat" type="email" name="email" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="form__control">
+              <span class="form__label">Телефон:<sup>*</sup></span>
+              <input class="form__input input input--owner-cat" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+            </label>
+          </div>
         </fieldset>
         <fieldset class="form__group form__group--comment">
           <legend class="form__title">Комментарий</legend>
-          <textarea class="form__input input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__input input input--comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__group form__group--additional">
           <legend class="form__title">Дополнительно</legend>
@@ -120,11 +122,13 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__button button" type="submit">Отправить заявку</button>
-        <span class="form__text"><sup>*</sup> — Обязательные поля</span>
+        <div class="form__button-wrapper">
+          <button class="form__button button button--form" type="submit">Отправить заявку</button>
+          <span class="form__text"><sup>*</sup> — Обязательные поля</span>
+        </div>
       </form>
     </section>
-    <section class="location">
+    <section class="location location--alt-bg">
       <div class="location__contacts contacts contacts--alt-bg">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
