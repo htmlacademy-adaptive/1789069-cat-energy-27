@@ -1,6 +1,13 @@
 @import "../global/variables.scss";
 
 .promo {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-promo.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 302px, auto 302px;
+  background-position: center 0, center 0;
+}
+
+.promo__wrapper {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -10,10 +17,10 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   text-align: center;
-  background-image: url("../img/index-cat-nutrition-promo.png"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-promo.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 20px 167px, 0 0, 0 0;
-  background-size: auto, 320px 302px, auto;
+  background-image: url("../img/index-cat-nutrition-promo.png");
+  background-repeat: no-repeat;
+  background-position: 20px 167px;
+  background-size: auto;
 }
 
 .promo__header {
@@ -40,6 +47,10 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    background-image: none;
+  }
+
+  .promo__wrapper {
     width: 708px;
     padding: 62px 205px 526px 87px;
     background-image: url("../img/index-cat-nutrition-promo.png");
@@ -72,25 +83,28 @@
 @media (min-width: $desktop-width) {
   .promo {
     position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      min-width: 720px;
+      height: 694px;
+      top: -141px;
+      right: 0;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-promo-desk.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      z-index: -1;
+    }
+  }
+
+  .promo__wrapper {
+    position: relative;
     box-sizing: border-box;
     width: 1220px;
     padding: 111px 720px 267px 80px;
     background-image: url("../img/index-cat-nutrition-promo.png");
     background-position: center 0;
-
-    &::after {
-      position: absolute;
-      z-index: -1;
-      content: "";
-      right: 0;
-      top: -141px;
-      min-width: 720px;
-      min-height: 694px;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-promo-desk.png");
-      background-repeat: no-repeat;
-      background-size: 720px 694px;
-      background-position: right;
-    }
   }
 
   .promo__title {
