@@ -1,5 +1,99 @@
 @import "../global/variables.scss";
 
+.navigation {
+  position: relative;
+}
+
+.navigation__toggle {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: -41px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.navigation--closed .navigation__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.navigation--opened .navigation__list {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  width: 18px;
+  height: 18px;
+  right: 22px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--nojs {
+  position: static;
+  min-height: 0;
+}
+
+.navigation--nojs .navigation__list {
+  display: block;
+  position: static;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .navigation__toggle {
     display: none;
