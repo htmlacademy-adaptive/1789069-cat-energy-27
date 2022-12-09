@@ -87,13 +87,13 @@
     &::after {
       content: "";
       position: absolute;
-      min-width: 720px;
+      width: 50%;
       height: 694px;
       top: -141px;
       right: 0;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-promo-desk.png");
-      background-repeat: no-repeat;
-      background-position: right;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto 694px, auto 694px;
       z-index: -1;
     }
   }
