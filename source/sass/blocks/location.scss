@@ -13,6 +13,15 @@
   }
 }
 
+.location__map {
+  display: block;
+  border: none;
+}
+
+.location__map-image {
+  display: block;
+}
+
 .location--alt-bg {
   background-color: #f2f2f2;
 }
