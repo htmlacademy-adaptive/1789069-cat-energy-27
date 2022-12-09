@@ -15,6 +15,30 @@
   }
 }
 
+.advantage--useful .advantage__description {
+  background-image: url("../img/advantage-1.png");
+  background-repeat: no-repeat;
+  background-position: 118px 40px;
+}
+
+.advantage--powder .advantage__description {
+  background-image: url("../img/advantage-2.png");
+  background-repeat: no-repeat;
+  background-position: 112px 40px;
+}
+
+.advantage--nutration .advantage__description {
+  background-image: url("../img/advantage-3.png");
+  background-repeat: no-repeat;
+  background-position: 113px 40px;
+}
+
+.advantage--time .advantage__description {
+  background-image: url("../img/advantage-4.png");
+  background-repeat: no-repeat;
+  background-position: 113px 40px;
+}
+
 .advantage--useful .advantage__description::before {
   background-image: url("../img/icon-leaf.svg");
   background-repeat: no-repeat;
