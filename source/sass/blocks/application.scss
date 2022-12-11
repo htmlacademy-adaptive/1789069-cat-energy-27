@@ -86,6 +86,24 @@
     width: 24px;
     height: 12px;
     background-image: url("../img/arrow.svg");
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      right: 0;
+      width: 32px;
+      background-image: url("../img/arrow-long.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      width: 32px;
+      background-image: url("../img/arrow-long.svg");
+    }
   }
 }
 
@@ -131,7 +149,7 @@
     top: 81px;
     width: 140px;
     height: 194px;
-    background-image: url("../../img/cat-slim.svg");
+    background-image: url("../img/cat-slim.svg");
     background-repeat: no-repeat;
     background-size: 140px 194px;
   }
@@ -143,7 +161,7 @@
     top: 135px;
     width: 268px;
     height: 112px;
-    background-image: url("../../img/cat-pro.svg");
+    background-image: url("../img/cat-pro.svg");
     background-size: 268px 112px;
   }
 

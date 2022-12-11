@@ -14,6 +14,15 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--promo {
@@ -29,6 +38,15 @@
 .button--more-products {
   background-color: #f2f2f2;
   color: #444444;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .button--additional-product {
@@ -44,8 +62,7 @@
   }
 
   .button--more-products {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 40px;
   }
 
   .button--form {
