@@ -86,6 +86,24 @@
     width: 24px;
     height: 12px;
     background-image: url("../img/arrow.svg");
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      right: 0;
+      width: 32px;
+      background-image: url("../../img/arrow-long.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      width: 32px;
+      background-image: url("../../img/arrow-long.svg");
+    }
   }
 }
 

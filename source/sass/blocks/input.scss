@@ -9,6 +9,18 @@
   color: #444444;
   border: none;
   outline: 1px solid #e7e7e7;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 2px solid #ff8282;
+  }
 }
 
 .input--cat {
