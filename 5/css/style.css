@@ -460,8 +460,7 @@
   }
 
   .button--more-products {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 40px;
   }
 
   .button--form {
