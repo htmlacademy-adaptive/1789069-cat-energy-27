@@ -564,14 +564,14 @@
 .application__link:hover::after {
   right: 0;
   width: 32px;
-  background-image: url("../../img/arrow-long.svg");
+  background-image: url("../img/arrow-long.svg");
 }
 .application__link:active {
   opacity: 0.3;
 }
 .application__link:active::after {
   width: 32px;
-  background-image: url("../../img/arrow-long.svg");
+  background-image: url("../img/arrow-long.svg");
 }
 
 @media (min-width: 768px) {
