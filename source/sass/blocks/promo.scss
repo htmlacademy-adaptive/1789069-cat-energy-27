@@ -20,7 +20,6 @@
   background-image: url("../img/index-cat-nutrition-promo.png");
   background-repeat: no-repeat;
   background-position: center 167px;
-  background-size: auto;
 }
 
 .promo__header {
@@ -53,8 +52,8 @@
   .promo__wrapper {
     width: 708px;
     padding: 62px 205px 526px 87px;
-    background-image: url("../img/index-cat-nutrition-promo.png");
-    background-position: center 200px;
+    background-image: url("../img/index-cat-nutrition-promo-tablet.png");
+    background-position: center bottom;
     text-align: left;
   }
 
@@ -89,7 +88,7 @@
       position: absolute;
       width: 50%;
       height: 694px;
-      top: -141px;
+      top: -113px;
       right: 0;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-promo-desk.png");
       background-repeat: no-repeat, no-repeat;
@@ -103,8 +102,8 @@
     box-sizing: border-box;
     width: 1220px;
     padding: 111px 720px 267px 80px;
-    background-image: url("../img/index-cat-nutrition-promo.png");
-    background-position: center 0;
+    background-image: url("../img/index-cat-nutrition-promo-desktop.png");
+    background-position: 448px 32px;
   }
 
   .promo__title {
