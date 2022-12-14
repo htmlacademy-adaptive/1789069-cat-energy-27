@@ -43,11 +43,13 @@
   width: 100%;
   background-color: #ffffff;
   z-index: 1;
+  padding-top: 16px;
 
   @media (min-width: $tablet-width) {
     position: static;
     width: auto;
     background-color: transparent;
+    padding-top: 0;
   }
 }
 
