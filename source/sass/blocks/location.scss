@@ -1,6 +1,6 @@
 @import "../global/variables.scss";
 
-.location__map-wrapper {
+/* .location__map-wrapper {
   width: 320px;
   margin: 0 auto;
 
@@ -11,15 +11,17 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
   }
-}
+} */
 
 .location__map {
   display: block;
   border: none;
+  width: 100%;
 }
 
 .location__map-image {
   display: block;
+  width: 100%;
 }
 
 .location--alt-bg {
