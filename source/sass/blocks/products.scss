@@ -95,7 +95,7 @@
   }
 
   .products__title {
-    margin-bottom: 82px;
+    margin-bottom: 163px;
     font-size: 60px;
     line-height: 60px;
 
@@ -111,7 +111,7 @@
   .products__list {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    gap: 141px 60px;
     margin-bottom: 0;
   }
 }
@@ -123,10 +123,11 @@
   }
 
   .products__title {
-    margin-bottom: 84px;
+    margin-bottom: 165px;
   }
 
   .products__list {
     grid-template-columns: repeat(4, 245px);
+    gap: 144px 80px;
   }
 }
