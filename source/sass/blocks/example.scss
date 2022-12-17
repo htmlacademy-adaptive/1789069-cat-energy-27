@@ -61,7 +61,7 @@
   color: #000000;
 }
 
-.example__price {
+.example__price-wrapper {
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -71,6 +71,14 @@
   color: #000000;
   text-align: center;
   text-transform: uppercase;
+}
+
+.example__price-desc {
+  margin: 0;
+}
+
+.example__price-number {
+  margin: 0;
 }
 
 .example__results-wrapper {
@@ -127,7 +135,7 @@
     line-height: 14px;
   }
 
-  .example__price {
+  .example__price-wrapper {
     max-width: 180px;
     justify-self: flex-end;
     font-size: 20px;
@@ -155,15 +163,17 @@
   }
 
   .example__results-wrapper {
-    grid-template-columns: 371px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 55px;
     margin: 0;
   }
 
-  .example__price {
-    max-width: fit-content;
-    justify-self: center;
-    text-align: center;
+  .example__price-wrapper {
+    max-width: 371px;
+    display: flex;
+    gap: 63px;
   }
 
   .example__inside-wrapper {

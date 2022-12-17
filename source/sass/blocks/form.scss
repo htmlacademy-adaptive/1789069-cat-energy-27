@@ -15,9 +15,39 @@
 }
 
 .form__title {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+
+  &::before {
+    position: absolute;
+    content: "";
+    margin-right: 20px;
+    top: 50%;
+    right: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 40px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    margin-left: 22px;
+    top: 50%;
+    width: 100vw;
+    height: 2px;
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 40px;
+    }
+  }
 }
 
 .form__label {
@@ -46,12 +76,42 @@
 }
 
 .form__group--cat {
+  position: relative;
   gap: 14px;
   margin-bottom: 46px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -24px;
+    left: -100%;
+    width: 1000000px;
+    height: 1px;
+    background-color: #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
 }
 
 .form__group--purpose {
+  position: relative;
   margin-bottom: 45px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -19px;
+    left: -100%;
+    width: 1000000px;
+    height: 1px;
+    background-color: #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
 }
 
 .form__group--owner-cat {
@@ -104,6 +164,23 @@
 
 .form__group--owner-cat .form__title {
   margin-bottom: 35px;
+
+  &::before {
+    top: 30%;
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+    }
+  }
+
+  &::after {
+    margin-left: 36px;
+    top: 30%;
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+    }
+  }
 }
 
 .form__group--comment .form__title {

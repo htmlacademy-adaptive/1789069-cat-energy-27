@@ -3,8 +3,21 @@
 
 .products {
   position: relative;
+  overflow: hidden;
 
   &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #f2f2f2;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  &::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -20,7 +33,7 @@
 .products__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding: 27px 0 50px 0;
+  padding: 27px 0 25px 0;
 }
 
 .products__title {
@@ -37,9 +50,10 @@
   &::after {
     position: absolute;
     content: "";
-    left: 0;
+    left: -100%;
+    right: 0;
     bottom: -41px;
-    width: 100%;
+    width: 1000000px;
     height: 1px;
     background-color: #ebebeb;
   }
@@ -47,7 +61,6 @@
 
 .products__list {
   @include normalize-list();
-  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   gap: 19px;
@@ -59,9 +72,9 @@
   &::after {
     position: absolute;
     content: "";
-    left: 0;
+    left: -100%;
     bottom: -11px;
-    width: 100%;
+    width: 1000000px;
     height: 1px;
     background-color: #ebebeb;
   }
@@ -71,13 +84,7 @@
   position: relative;
 
   &::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: -25px;
-    width: 100%;
-    height: 1px;
-    background-color: #ebebeb;
+    content: none;
   }
 }
 
@@ -88,7 +95,7 @@
   }
 
   .products__title {
-    margin-bottom: 82px;
+    margin-bottom: 163px;
     font-size: 60px;
     line-height: 60px;
 
@@ -104,7 +111,7 @@
   .products__list {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    gap: 141px 60px;
     margin-bottom: 0;
   }
 }
@@ -116,10 +123,11 @@
   }
 
   .products__title {
-    margin-bottom: 84px;
+    margin-bottom: 165px;
   }
 
   .products__list {
     grid-template-columns: repeat(4, 245px);
+    gap: 144px 80px;
   }
 }
