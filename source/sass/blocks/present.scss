@@ -4,9 +4,14 @@
   box-sizing: border-box;
   width: 280px;
   padding: 58px 61px 43px 58px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present@1x.png");
   background-repeat: no-repeat;
   text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present@2x.png");
+    background-size: 280px auto;
+  }
 }
 
 .present__description {
@@ -31,8 +36,13 @@
   .present {
     width: 708px;
     padding: 57px 124px 60px 77px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present-big.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present-big@1x.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present-big@2x.png");
+      background-size: 707px auto;
+    }
   }
 
   .present__description {
