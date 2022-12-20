@@ -8,7 +8,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-promo@2x.png");
-    background-size: 320px auto;
+    background-size: auto 302px, 320px 302px;
   }
 }
 
