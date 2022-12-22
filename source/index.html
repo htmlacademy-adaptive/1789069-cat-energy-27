@@ -113,11 +113,31 @@
             </div>
           </div>
           <div class="example__slider slider">
-            <img class="slider__image slider__image--before" src="" width="280" height="256" alt="Кот Борис до начала питания Cat Energy Slim.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider-before-tablet@1x.png 1x, img/slider-before-tablet@2x.png 2x" width="560" height="512">
+              <img class="slider__image slider__image--before" src="img/slider-before@1x.png" srcset="img/slider-before@1x.png 1x, img/slider-before@2x.png 2x" width="280" height="256" alt="Кот Борис до начала питания Cat Energy Slim.">
+            </picture>
             <button class="slider__control">
+              <svg class="slider__control-icon slider__control-icon--mobile" width="40" height="256" viewBox="0 0 40 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="slider__control-icon-elem" x="18" width="4" height="256" rx="2" fill="#666666"/>
+                <rect x="1" y="109" width="38" height="38" rx="19" fill="white"/>
+                <path class="slider__control-icon-elem" d="M16 119L8 128L16 137V119Z" fill="#666666"/>
+                <path class="slider__control-icon-elem" d="M32 128L24 119V137L32 128Z" fill="#666666"/>
+                <rect class="slider__control-icon-elem-stroke" x="1" y="109" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+              </svg>
+              <svg class="slider__control-icon slider__control-icon--tablet" width="40" height="512" viewBox="0 0 40 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="slider__control-icon-elem" x="18" width="4" height="512" rx="2" fill="#666666"/>
+                <rect x="1" y="237" width="38" height="38" rx="19" fill="white"/>
+                <path class="slider__control-icon-elem" d="M16 247L8 256L16 265V247Z" fill="#666666"/>
+                <path class="slider__control-icon-elem" d="M32 256L24 247V265L32 256Z" fill="#666666"/>
+                <rect class="slider__control-icon-elem-stroke" x="1" y="237" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+              </svg>
               <span class="visually-hidden">Сравнение.</span>
             </button>
-            <img class="slider__image slider__image--after" src="" width="280" height="256" alt="Кот Борис после начала питания Cat Energy Slim.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider-after-tablet@1x.png 1x, img/slider-after-tablet@2x.png 2x" width="560" height="512">
+              <img class="slider__image slider__image--after" src="img/slider-after@1x.png" srcset="img/slider-after@1x.png 1x, img/slider-after@2x.png 2x" width="280" height="256" alt="Кот Борис после начала питания Cat Energy Slim.">
+            </picture>
           </div>
         </div>
       </div>
@@ -175,5 +195,6 @@
     </div>
   </footer>
 <script src="js/script.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>
