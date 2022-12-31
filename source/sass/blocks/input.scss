@@ -21,14 +21,27 @@
   &:invalid:not(:placeholder-shown) {
     outline: 2px solid #ff8282;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .input--cat {
   padding: 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+  }
 }
 
 .input--owner-cat {
   padding: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+  }
 }
 
 .input--comment {
@@ -36,30 +49,13 @@
   min-height: 150px;
   resize: none;
   padding: 9px 15px;
-}
 
-@media (min-width: $tablet-width) {
-  .input {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .input--cat {
-    padding: 11px 20px;
-  }
-
-  .input--owner-cat {
-    padding: 11px 20px;
-  }
-
-  .input--comment {
+  @media (min-width: $tablet-width) {
     padding: 10px 20px;
     min-height: 174px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .input--comment {
+  @media (min-width: $desktop-width) {
     padding: 10px 19px;
   }
 }

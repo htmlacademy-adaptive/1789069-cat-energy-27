@@ -17,17 +17,23 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.navigation--closed .navigation__toggle::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+.navigation--closed .navigation__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
 }
 
 .navigation--closed .navigation__list {
@@ -94,11 +100,5 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .navigation__toggle {
-    display: none;
   }
 }

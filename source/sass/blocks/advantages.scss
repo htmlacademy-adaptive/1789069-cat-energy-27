@@ -1,32 +1,8 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
 
-.advantages__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 0 49px 0;
-}
-
-.advantages__title {
-  margin: 0;
-  margin-bottom: 40px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  color: #000000;
-}
-
-.advantages__list {
-  @include normalize-list();
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .advantages {
+.advantages {
+  @media (min-width: $tablet-width) {
     position: relative;
 
     &::after {
@@ -40,33 +16,25 @@
     }
   }
 
-  .advantages__wrapper {
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.advantages__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 0 49px;
+
+  @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 0 90px 0;
     position: relative;
   }
 
-  .advantages__title {
-    margin-bottom: 32px;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .advantages__list {
-    display: grid;
-    grid-template-columns: 247px 249px;
-    gap: 37px 153px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages {
-    &::after {
-      content: none;
-    }
-  }
-
-  .advantages__wrapper {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 0 69px 0;
 
@@ -74,8 +42,38 @@
       content: none;
     }
   }
+}
 
-  .advantages__list {
+.advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.advantages__list {
+  @include normalize-list();
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 247px 249px;
+    gap: 37px 153px;
+  }
+
+  @media (min-width: $desktop-width) {
     grid-template-columns: 230px 246px 248px 250px;
     gap: 75px;
   }

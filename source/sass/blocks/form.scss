@@ -31,6 +31,8 @@
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
       margin-right: 40px;
     }
   }
@@ -57,6 +59,11 @@
   line-height: 18px;
   text-transform: uppercase;
   white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__input {
@@ -200,6 +207,16 @@
       content: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    margin-bottom: 0;
+  }
 }
 
 .form__group--purpose {
@@ -219,24 +236,69 @@
       content: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 29px 28px;
+    margin-bottom: 71px;
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    margin-bottom: 0;
+  }
 }
 
 .form__group--owner-cat {
   margin-bottom: 23.5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .form__controls-owner-cat-wrapper {
   display: flex;
   flex-direction: column;
   gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 78px;
+  }
 }
 
 .form__group--comment {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .form__group--additional {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .form__group--cat .form__control {
@@ -259,6 +321,16 @@
 
 .form__list--additional {
   gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .form__group--owner-cat .form__title {
@@ -280,23 +352,51 @@
       top: 50%;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .form__group--comment .form__title {
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .form__group--additional .form__title {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .form__button-wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 568px 1fr;
+    gap: 84px;
+  }
 }
 
 .form__button {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__text {
@@ -307,120 +407,19 @@
   line-height: 16px;
   color: #000000;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .form__title {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form__label {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .form__group--cat {
-    gap: 20px;
-    margin-bottom: 72px;
-  }
-
-  .form__group--purpose {
-    padding: 25px 0 29px 28px;
-    margin-bottom: 71px;
-    border: 1px solid #e7e7e7;
-  }
-
-  .form__group--owner-cat {
-    margin-bottom: 65px;
-  }
-
-  .form__controls-owner-cat-wrapper {
-    gap: 20px;
-  }
-
-  .form__group--owner-cat .form__title {
-    margin-bottom: 76px;
-  }
-
-  .form__group--comment {
-    margin-bottom: 65px;
-  }
-
-  .form__group--comment .form__title {
-    margin-bottom: 76px;
-  }
-
-  .form__group--additional {
-    margin-bottom: 54px;
-  }
-
-  .form__group--additional .form__title {
-    margin-bottom: 57px;
-  }
-
-  .form__list--additional {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px 0;
-  }
-
-  .form__button-wrapper {
-    display: grid;
-    grid-template-columns: 282px 1fr;
-    gap: 64px;
-    align-items: center;
-  }
-
-  .form__button {
-    margin-bottom: 0;
-  }
-
-  .form__text {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
     justify-self: flex-start;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form__form-group-cat-and-purpose-wrapper {
+.form__form-group-cat-and-purpose-wrapper {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
     margin-bottom: 69px;
-  }
-
-  .form__group--cat {
-    grid-column: 1 / 2;
-    margin-bottom: 0;
-  }
-
-  .form__group--purpose {
-    grid-column: 2 / 3;
-    margin-bottom: 0;
-  }
-
-  .form__controls-owner-cat-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 78px;
-  }
-
-  .form__group--owner-cat {
-    margin-bottom: 67px;
-  }
-
-  .form__group--comment {
-    margin-bottom: 67px;
-  }
-
-  .form__list--additional {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .form__button-wrapper {
-    grid-template-columns: 568px 1fr;
-    gap: 84px;
   }
 }

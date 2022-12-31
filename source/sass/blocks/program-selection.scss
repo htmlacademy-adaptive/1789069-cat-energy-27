@@ -24,6 +24,16 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 64px 40px 72px 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 73px 0 82px 0;
+  }
 }
 
 .program-selection__title {
@@ -33,6 +43,16 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .program-selection__description {
@@ -43,39 +63,15 @@
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
-}
 
-@media (min-width: $tablet-width) {
-  .program-selection__wrapper {
-    width: 708px;
-    padding: 64px 40px 72px 37px;
-  }
-
-  .program-selection__title {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 54px;
-  }
-
-  .program-selection__description {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;
     padding-right: 345px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .program-selection__wrapper {
-    width: 1220px;
-    padding: 73px 0 82px 0;
-  }
-
-  .program-selection__title {
-    margin-bottom: 56px;
-  }
-
-  .program-selection__description {
+  @media (min-width: $desktop-width) {
     padding-right: 897px;
   }
 }

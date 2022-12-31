@@ -12,6 +12,24 @@
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present@2x.png");
     background-size: 280px auto;
   }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 708px;
+    padding: 57px 124px 60px 77px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present-big@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present-big@2x.png");
+      background-size: 707px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    padding: 56px 43px 42px 41px;
+  }
 }
 
 .present__description {
@@ -30,22 +48,8 @@
     height: 80px;
     background-image: url("../img/icon-present.svg");
   }
-}
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .present {
-    width: 708px;
-    padding: 57px 124px 60px 77px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present-big@1x.png");
-    background-repeat: no-repeat;
-
-    @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present-big@2x.png");
-      background-size: 707px auto;
-    }
-  }
-
-  .present__description {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: grid;
     grid-template-columns: 80px 161px;
     gap: 265px;
@@ -55,13 +59,5 @@
       width: 80px;
       height: 82px;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .present {
-    width: 245px;
-    height: 289px;
-    padding: 56px 43px 42px 41px;
   }
 }
