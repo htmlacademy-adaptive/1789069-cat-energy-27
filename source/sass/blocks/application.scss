@@ -166,12 +166,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    left: -19px;
-    bottom: 24px;
-    width: 134px;
-    height: 56px;
-    background-size: 134px 56px;
+    &::after {
+      content: "";
+      left: -19px;
+      bottom: 24px;
+      width: 134px;
+      height: 56px;
+      background-size: 134px 56px;
+    }
   }
 }
 
