@@ -33,20 +33,21 @@
     transform: translate(-50%, -50%);
     width: 30px;
     height: 30px;
-    background-image: url("../img/plus.svg");
+    background-image: url("../img/icon-plus.svg");
+
+    @media (min-width: $tablet-width) {
+      bottom: 49px;
+      width: 60px;
+      height: 60px;
+      background-size: 60px 60px;
+      background-image: url("../img/icon-plus-tablet.svg");
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 23px;
-
-    &::before {
-      bottom: 49px;
-      width: 60px;
-      height: 60px;
-      background-size: 60px 60px;
-    }
   }
 }
 
