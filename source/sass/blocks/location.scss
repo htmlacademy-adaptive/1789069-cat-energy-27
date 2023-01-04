@@ -1,29 +1,44 @@
 @import "../global/variables.scss";
 
-/* .location__map-wrapper {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
+.location {
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    position: relative;
   }
-} */
+}
+
+.location__map-wrapper {
+  position: relative;
+}
 
 .location__map {
   display: block;
   border: none;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .location__map-image {
   display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
   width: 100%;
+  object-fit: cover;
 }
 
 .location--alt-bg {
   background-color: #f2f2f2;
+}
+
+.location__contacts {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 7.6%;
+    z-index: 1;
+    margin: 0 auto;
+  }
 }

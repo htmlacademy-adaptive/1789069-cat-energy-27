@@ -1,7 +1,6 @@
 @use "global/fonts.scss";
 @use "global/visually-hidden.scss";
 @use "blocks/logo.scss";
-@use "blocks/small-logo.scss";
 @use "blocks/page.scss";
 @use "blocks/header.scss";
 @use "blocks/navigation.scss";
@@ -13,6 +12,7 @@
 @use "blocks/advantages.scss";
 @use "blocks/advantage.scss";
 @use "blocks/example.scss";
+@use "blocks/slider.scss";
 @use "blocks/location.scss";
 @use "blocks/contacts.scss";
 @use "blocks/social.scss";

@@ -20,6 +20,10 @@
       fill: #68b738;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
 }
 
 .copyright__link {
@@ -34,11 +38,6 @@
 }
 
 .copyright__icon {
+  display: block;
   fill: #666666;
-}
-
-@media (min-width: $tablet-width) {
-  .copyright {
-    gap: 23px;
-  }
 }

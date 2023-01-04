@@ -7,9 +7,14 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 132px;
+  }
 }
 
 .social__icon {
+  display: block;
   fill: #666666;
 
   &:hover {
@@ -19,11 +24,5 @@
   &:active {
     fill: #68b738;
     opacity: 0.3;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .socail {
-    max-width: 132px;
   }
 }
