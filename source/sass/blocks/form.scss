@@ -24,15 +24,13 @@
     position: absolute;
     content: "";
     margin-right: 20px;
-    top: 50%;
+    top: 60%;
     right: 100%;
     width: 100vw;
     height: 2px;
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
-      font-size: 36px;
-      line-height: 36px;
       margin-right: 40px;
     }
   }
@@ -41,7 +39,7 @@
     position: absolute;
     content: "";
     margin-left: 22px;
-    top: 50%;
+    top: 60%;
     width: 100vw;
     height: 2px;
     background-color: #68b738;
@@ -49,6 +47,11 @@
     @media (min-width: $tablet-width) {
       margin-left: 40px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -239,7 +242,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px 0 25px 28px;
-    margin-bottom: 71px;
+    margin-bottom: 75px;
     outline: 1px solid #e7e7e7;
   }
 
@@ -298,15 +301,20 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 61px;
   }
 }
 
 .form__group--cat .form__control {
-  gap: 13px;
+  gap: 18px;
 }
 
 .form__group--owner-cat .form__control {
   gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .form__list {
@@ -325,11 +333,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px 0;
+    gap: 32px 58px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
   }
 }
 
@@ -340,7 +349,7 @@
     top: 30%;
 
     @media (min-width: $tablet-width) {
-      top: 50%;
+      top: 60%;
     }
   }
 
@@ -349,7 +358,7 @@
     top: 30%;
 
     @media (min-width: $tablet-width) {
-      top: 50%;
+      top: 60%;
     }
   }
 
@@ -412,6 +421,7 @@
     font-size: 16px;
     line-height: 16px;
     justify-self: flex-start;
+    margin-bottom: 5px;
   }
 }
 

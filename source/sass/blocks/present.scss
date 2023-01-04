@@ -13,9 +13,9 @@
     background-size: 280px auto;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     width: 708px;
-    padding: 57px 124px 60px 77px;
+    padding: 58px 124px 60px 77px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present-big@1x.png");
     background-repeat: no-repeat;
 
@@ -49,7 +49,7 @@
     background-image: url("../img/icon-present.svg");
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     display: grid;
     grid-template-columns: 80px 161px;
     gap: 265px;

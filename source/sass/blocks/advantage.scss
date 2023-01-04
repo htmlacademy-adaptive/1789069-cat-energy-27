@@ -1,6 +1,6 @@
 @import "../global/variables.scss";
 
-.advantage__description {
+.advantage {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -30,7 +30,7 @@
   }
 }
 
-.advantage--useful .advantage__description {
+.advantage--useful {
   &::before {
     background-image: url("../img/icon-leaf.svg");
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@
   }
 }
 
-.advantage--powder .advantage__description {
+.advantage--powder {
   &::before {
     background-image: url("../img/icon-powder.svg");
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
   }
 }
 
-.advantage--nutration .advantage__description {
+.advantage--nutration {
   &::before {
     background-image: url("../img/icon-eat.svg");
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@
   }
 }
 
-.advantage--time .advantage__description {
+.advantage--time {
   &::before {
     background-image: url("../img/icon-time.svg");
     background-repeat: no-repeat;

@@ -8,7 +8,8 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    width: 92%;
+    width: 92.2%;
+    /* width: 708px; */
     max-width: 1220px;
     flex-direction: row;
     align-items: center;

@@ -54,10 +54,15 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    margin-left: 20px;
 
     &::before,
     &::after {
       content: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
   }
 }

@@ -12,15 +12,15 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 56px 40px;
+    padding: 60px 37px;
     grid-template-columns: 180px 160px;
     gap: 296px;
   }
 
   @media (min-width: $desktop-width) {
     width: 565px;
-    padding: 56px 80px;
-    grid-template-columns: 163px 155px;
+    padding: 56px 80px 42px;
+    grid-template-columns: 163px 120px;
     gap: 87px;
     background-color: #ffffff;
   }
@@ -47,9 +47,15 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-right: 7px;
+    margin-top: -5px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 

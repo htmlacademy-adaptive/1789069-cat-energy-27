@@ -26,6 +26,7 @@
 }
 
 .button--promo {
+  padding: 11px 44px;
   font-size: 14px;
   line-height: 18px;
 
@@ -42,6 +43,7 @@
 }
 
 .button--more-products {
+  padding: 10px 44px;
   background-color: #f2f2f2;
   color: #444444;
 
@@ -65,13 +67,15 @@
 }
 
 .button--form {
+  padding: 10px 44px;
+
   @media (min-width: $tablet-width) {
-    padding: 14px 45px;
+    padding: 16px 45px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 14px 188px;
+    padding: 16px 188px;
   }
 }
