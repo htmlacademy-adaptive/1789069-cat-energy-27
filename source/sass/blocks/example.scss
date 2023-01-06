@@ -92,6 +92,10 @@
     padding: 15px 16px 0 16px;
     gap: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 11px;
+  }
 }
 
 .example__result-description {
@@ -183,7 +187,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 55px;
+    gap: 62px;
     margin: 0;
   }
 }
@@ -196,7 +200,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 65px;
+    bottom: 60px;
   }
 }
 

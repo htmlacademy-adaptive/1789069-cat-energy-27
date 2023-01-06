@@ -24,12 +24,22 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 50%;
-    bottom: 303px;
+    top: -73px;
     transform: translate(-50%);
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 315px;
+    top: -80px;
+  }
+}
+
+.product-card__link-image--small-image {
+  @media (min-width: $tablet-width) {
+    top: -45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -52px;
   }
 }
 
