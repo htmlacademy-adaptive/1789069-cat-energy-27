@@ -4,25 +4,19 @@
   box-sizing: border-box;
   width: 280px;
   padding: 58px 61px 43px 58px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present@1x.png");
+  /* stylelint-disable unit-no-unknown*/
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../img/catalog-background-present@1x.webp" 1x, "../img/catalog-background-present@1x.png" 1x, "../img/catalog-background-present@2x.webp" 2x, "../img/catalog-background-present@2x.png" 2x);
+  /* stylelint-enable unit-no-unknown*/
   background-repeat: no-repeat;
   text-align: center;
-
-  @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present@2x.png");
-    background-size: 280px auto;
-  }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     width: 708px;
     padding: 58px 124px 60px 77px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present-big@1x.png");
+    /* stylelint-disable unit-no-unknown*/
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../img/catalog-background-present-big@1x.webp" 1x, "../img/catalog-background-present-big@1x.png" 1x, "../img/catalog-background-present-big@2x.webp" 2x, "../img/catalog-background-present-big@2x.png" 2x);
+    /* stylelint-enable unit-no-unknown*/
     background-repeat: no-repeat;
-
-    @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-present-big@2x.png");
-      background-size: 707px auto;
-    }
   }
 
   @media (min-width: $desktop-width) {
