@@ -180,13 +180,13 @@
 .form__input--email,
 .form__input--tel {
   &:focus {
-    & + .form__input-icon path {
+    & + .form__input-icon {
       stroke: #68b738;
     }
   }
 
   &:invalid:not(:placeholder-shown) {
-    & + .form__input-icon path {
+    & + .form__input-icon {
       stroke: #ff8282;
     }
   }

@@ -11,7 +11,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import { deleteAsync } from 'del';
+import del from 'del';
 
 // Styles
 export const styles = () => {
@@ -93,8 +93,8 @@ const copy = (done) => {
 }
 
 // Clean
-export const clean = () => {
-  return deleteAsync('build');
+const clean = () => {
+  return del('build');
 }
 
 // Server
