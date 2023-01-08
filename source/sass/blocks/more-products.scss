@@ -1,6 +1,7 @@
 @import "../global/variables.scss";
 
 .more-products {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 70px;
@@ -9,6 +10,24 @@
   @media (min-width: $tablet-width) {
     padding: 160px 37px 38px;
     outline: 2px solid #f2f2f2;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 17px;
+    transform: translate(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-plus.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 50px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-plus-tablet.svg");
+    }
   }
 }
 
@@ -23,26 +42,6 @@
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 29px;
-    transform: translate(-50%, -50%);
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/icon-plus.svg");
-
-    @media (min-width: $tablet-width) {
-      bottom: 63px;
-      width: 60px;
-      height: 60px;
-      background-size: 60px 60px;
-      background-image: url("../img/icon-plus-tablet.svg");
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
