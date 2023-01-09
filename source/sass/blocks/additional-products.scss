@@ -24,6 +24,7 @@
 }
 
 .additional-products__title {
+  display: inline-flex;
   position: relative;
   margin: 0;
   margin-bottom: 49px;
@@ -39,9 +40,8 @@
     position: absolute;
     width: 100vw;
     height: 2px;
-    margin-right: 21px;
     top: 60%;
-    right: 100%;
+    right: calc(100% + 21px);
     background-color: #68b738;
   }
 
@@ -50,7 +50,7 @@
     position: absolute;
     width: 100vw;
     height: 2px;
-    margin-left: 21px;
+    left: calc(100% + 21px);
     top: 60%;
     background-color: #68b738;
   }
@@ -62,11 +62,11 @@
     margin-left: 37px;
 
     &::before {
-      margin-right: 37px;
+      right: calc(100% + 37px);
     }
 
     &::after {
-      margin-left: 36px;
+      left: calc(100% + 36px);
     }
   }
 
@@ -74,11 +74,11 @@
     margin-left: 0;
 
     &::before {
-      margin-right: 40px;
+      right: calc(100% + 40px);
     }
 
     &::after {
-      margin-left: 35px;
+      left: calc(100% + 35px);
     }
   }
 }

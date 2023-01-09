@@ -30,7 +30,7 @@ export const styles = () => {
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin())
     .pipe(gulp.dest('build'));
 }
 
@@ -64,7 +64,7 @@ const createWebp = () => {
 
 // SVG
 const svg = () => {
-  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }

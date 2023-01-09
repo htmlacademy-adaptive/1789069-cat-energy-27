@@ -15,37 +15,39 @@
 }
 
 .form__title {
+  padding: 0;
   position: relative;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
 
   &::before {
+    display: block;
     position: absolute;
     content: "";
-    margin-right: 20px;
+    right: calc(100% + 20px);
     top: 60%;
-    right: 100%;
     width: 100vw;
     height: 2px;
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
-      margin-right: 40px;
+      right: calc(100% + 40px);
     }
   }
 
   &::after {
+    display: block;
     position: absolute;
     content: "";
-    margin-left: 22px;
+    left: calc(100% + 22px);
     top: 60%;
     width: 100vw;
     height: 2px;
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
-      margin-left: 40px;
+      left: calc(100% + 40px);
     }
   }
 
@@ -61,7 +63,6 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  white-space: nowrap;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -354,10 +355,12 @@
   }
 
   &::after {
-    margin-left: 36px;
+    /* margin-left: 36px; */
+    margin-left: -102px;
     top: 30%;
 
     @media (min-width: $tablet-width) {
+      margin-left: 0;
       top: 60%;
     }
   }
@@ -428,7 +431,7 @@
 .form__form-group-cat-and-purpose-wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 569px);
     gap: 80px;
     margin-bottom: 69px;
   }
