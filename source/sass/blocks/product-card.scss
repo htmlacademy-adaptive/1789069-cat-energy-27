@@ -67,6 +67,7 @@
 
 .product-card__name {
   margin: 0;
+  padding-right: 41px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -76,12 +77,9 @@
   color: #222222;
 
   @media (min-width: $tablet-width) {
+    padding-right: 0;
     font-size: 20px;
     line-height: 24px;
-
-    & br {
-      display: none;
-    }
   }
 }
 
