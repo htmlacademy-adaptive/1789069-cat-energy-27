@@ -20,6 +20,8 @@
 
   @media (min-width: $desktop-width) {
     width: 565px;
+    max-height: 250px;
+    overflow: auto;
     padding: 56px 80px 42px;
     grid-template-columns: 163px 120px;
     gap: 87px;

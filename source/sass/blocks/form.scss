@@ -77,12 +77,18 @@
 
 .form__input[type="radio"],
 .form__input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 
-  &:not(:disabled) + .form__label:hover {
+  &:not(:disabled, :focus) + .form__label:hover {
     &::before {
       outline: 1px solid #bababa;
     }
+  }
+
+  &:focus + .form__label::before {
+    outline: 2px solid #000000;
   }
 
   &:disabled + .form__label {
