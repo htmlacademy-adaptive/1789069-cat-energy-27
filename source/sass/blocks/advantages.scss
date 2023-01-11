@@ -24,12 +24,14 @@
 }
 
 .advantages__wrapper {
-  width: 280px;
+  /* width: 280px; */
+  width: 87.5%;
   margin: 0 auto;
   padding: 0 0 49px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    /* width: 708px; */
+    width: 92.2%;
     padding: 0 0 90px 0;
     position: relative;
   }
@@ -70,11 +72,20 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 247px 249px;
-    gap: 37px 138px;
+    /* gap: 37px 138px; */
+    row-gap: 37px;
+    justify-content: space-between;
+    padding-right: 75px;
+  }
+
+  @media (min-width: 900px) and (max-width: $tablet-width-only) {
+    justify-content: space-evenly;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 230px 246px 248px 250px;
-    gap: 83px;
+    padding-right: 0;
+    justify-content: stretch;
+    grid-template-columns: repeat(4, 245px);
+    gap: 80px;
   }
 }

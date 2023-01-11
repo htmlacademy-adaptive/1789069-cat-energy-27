@@ -1,7 +1,7 @@
 @import "../global/variables.scss";
 
 .application {
-  padding: 24px 20px 18px 20px;
+  padding: 24px 21px 18px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
@@ -34,7 +34,7 @@
 .application__title {
   display: inline-flex;
   align-items: center;
-  gap: 19px;
+  gap: 21px;
   position: relative;
   margin: 0;
   margin-bottom: 22px;

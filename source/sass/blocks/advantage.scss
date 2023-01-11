@@ -28,6 +28,10 @@
       height: 80px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0 57px;
+  }
 }
 
 .advantage--useful {
@@ -40,7 +44,7 @@
   @media (min-width: $tablet-width) {
     background-image: image-set("../img/advantage-1.webp" 1x, "../img/advantage-1.png" 1x);
     background-repeat: no-repeat;
-    background-position: 118px 40px;
+    background-position: 123px 40px;
   }
 }
 
@@ -54,7 +58,7 @@
   @media (min-width: $tablet-width) {
     background-image: image-set("../img/advantage-2.webp" 1x, "../img/advantage-2.png" 1x);
     background-repeat: no-repeat;
-    background-position: 112px 40px;
+    background-position: 123px 40px;
   }
 }
 
@@ -68,7 +72,7 @@
   @media (min-width: $tablet-width) {
     background-image: image-set("../img/advantage-3.webp" 1x, "../img/advantage-3.png" 1x);
     background-repeat: no-repeat;
-    background-position: 113px 40px;
+    background-position: 123px 40px;
   }
 }
 
@@ -82,6 +86,6 @@
   @media (min-width: $tablet-width) {
     background-image: image-set("../img/advantage-4.webp" 1x, "../img/advantage-4.png" 1x);
     background-repeat: no-repeat;
-    background-position: 113px 40px;
+    background-position: 123px 40px;
   }
 }

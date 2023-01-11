@@ -2,18 +2,18 @@
 
 .header {
   min-width: 280px;
-  padding: 10px 0 17px 0;
+  padding: 12px 0 16px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    width: 94.25%;
+    width: 93%;
     max-width: 1220px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0 0 0;
+    padding: 3px 0 0 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,7 +35,7 @@
     width: 174px;
     padding: 0;
     margin: 0;
-    gap: 12px;
+    /* gap: 15px; */
   }
 
   @media (min-width: $desktop-width) {

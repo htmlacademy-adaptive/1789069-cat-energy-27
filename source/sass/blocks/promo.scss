@@ -37,7 +37,8 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 280px;
+  /* width: 280px; */
+  width: 87.5%;
   padding: 27px 0 20px 0;
   margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
@@ -48,8 +49,9 @@
   background-position: center 167px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 62px 205px 526px 87px;
+    /* width: 708px; */
+    width: 92.2%;
+    padding: 62px 200px 526px 90px;
     background-image: image-set("../img/index-cat-nutrition-promo-tablet@1x.webp" 1x, "../img/index-cat-nutrition-promo-tablet@1x.png" 1x, "../img/index-cat-nutrition-promo-tablet@2x.webp" 2x, "../img/index-cat-nutrition-promo-tablet@2x.png" 2x);
     background-position: center bottom;
     text-align: left;
