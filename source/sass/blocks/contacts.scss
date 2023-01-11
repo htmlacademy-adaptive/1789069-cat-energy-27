@@ -1,15 +1,20 @@
 @import "../global/variables.scss";
 
 .contacts {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.contacts__wrapper {
   box-sizing: border-box;
+  margin: 0 auto;
   width: 280px;
   min-height: 112px;
-  margin: 0 auto;
   padding: 26px 0;
   display: grid;
   grid-template-columns: repeat(2, 139px);
   gap: 2px;
-  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -19,6 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     width: 565px;
     max-height: 250px;
     overflow: auto;

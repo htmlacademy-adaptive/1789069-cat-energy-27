@@ -12,12 +12,3 @@ navToggle.addEventListener('click', function() {
     navigation.classList.remove('navigation--opened');
   }
 });
-
-const map = document.querySelector('.location__map');
-const mapImage = document.querySelector('.location__map-image');
-const contacts = document.querySelector('.contacts');
-
-if (getComputedStyle(contacts).height > '300px') {
-  map.style.height = `${getComputedStyle(contacts).height}`;
-  mapImage.style.height = `${getComputedStyle(contacts).height}`
-}
