@@ -4,6 +4,10 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
+  }
+
+  @media (min-width: $desktop-width) {
     background: linear-gradient(to top, #f2f2f2 462px, #ffffff 462px);
   }
 }
@@ -90,7 +94,7 @@
   @media (min-width: $tablet-width) {
     width: 162px;
     padding: 15px 16px 0 16px;
-    gap: 15px;
+    gap: 11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -167,6 +171,15 @@
 
 .example__price-desc {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .example__price-number {
@@ -180,7 +193,7 @@
     display: grid;
     grid-template-columns: 366px 1fr;
     align-items: center;
-    margin-bottom: 99px;
+    margin-bottom: 105px;
   }
 
   @media (min-width: $desktop-width) {
