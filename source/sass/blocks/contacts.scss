@@ -39,9 +39,15 @@
     max-height: 250px;
     overflow: auto;
     padding: 60px 60px 56px 80px;
-    grid-template-columns: 163px 170px;
+    grid-template-columns: 163px 175px;
     gap: 87px;
     background-color: #ffffff;
+  }
+}
+
+.contacts__wrapper--alt-style {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 43px;
   }
 }
 
@@ -79,10 +85,22 @@
   }
 }
 
+.contacts__address--alt-style {
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
+  }
+}
+
 .contacts__address-city {
   @media (min-width: $tablet-width) {
     display: block;
     margin-top: 19px;
+  }
+}
+
+.contacts__address-city--no-indent {
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
