@@ -2,8 +2,6 @@
 
 .present {
   box-sizing: border-box;
-  /* width: 280px; */
-  /* width: 87.5%; */
   padding: 58px 61px 43px 58px;
   /* stylelint-disable unit-no-unknown*/
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../img/catalog-background-present@1x.webp" 1x, "../img/catalog-background-present@1x.png" 1x, "../img/catalog-background-present@2x.webp" 2x, "../img/catalog-background-present@2x.png" 2x);
@@ -19,7 +17,6 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    /* width: 708px; */
     padding: 58px 124px 60px 77px;
     /* stylelint-disable unit-no-unknown*/
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../img/catalog-background-present-big@1x.webp" 1x, "../img/catalog-background-present-big@1x.png" 1x, "../img/catalog-background-present-big@2x.webp" 2x, "../img/catalog-background-present-big@2x.png" 2x);
@@ -61,7 +58,6 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     display: grid;
     grid-template-columns: 80px 161px;
-    /* gap: 265px; */
     justify-content: space-between;
     text-align: left;
 

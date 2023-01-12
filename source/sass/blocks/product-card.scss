@@ -2,7 +2,6 @@
 
 .product-card {
   display: grid;
-  /* grid-template-columns: repeat(2, 140px); */
   grid-template-columns: repeat(2, 1fr);
   padding: 12px 0 14px 0;
 
@@ -40,7 +39,7 @@
 }
 
 .product-card__link-image--small-image {
-  top: 16px;
+  top: 24px;
 
   @media (min-width: $tablet-width) {
     top: -45px;
@@ -48,6 +47,12 @@
 
   @media (min-width: $desktop-width) {
     top: -52px;
+  }
+}
+
+.product-card__link-image--small-image-alt-size {
+  @media (max-width: $mobile-width-only) {
+    top: 13px;
   }
 }
 
