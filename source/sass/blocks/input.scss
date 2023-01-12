@@ -28,19 +28,30 @@
   }
 }
 
+.input[type="number"] {
+  /* stylelint-disable property-no-vendor-prefix*/
+  -moz-appearance: textfield;
+  /* stylelint-enable property-no-vendor-prefix*/
+}
+
+.input[type="number"]::-webkit-outer-spin-button,
+.input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
 .input--cat {
-  padding: 14px 20px 13px;
+  padding: 15px 21px 12px;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 20px;
+    padding: 10px 20px;
   }
 }
 
 .input--owner-cat {
-  padding: 14px 15px 14px;
+  padding: 15px 40px 12px 16px;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 20px;
+    padding: 11px 45px 11px 20px;
   }
 }
 

@@ -1,28 +1,53 @@
 @import "../global/variables.scss";
 
 .contacts {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.contacts__wrapper {
   box-sizing: border-box;
-  width: 280px;
   margin: 0 auto;
+  /* width: 280px; */
+  width: 87.5%;
+  min-height: 112px;
   padding: 26px 0;
   display: grid;
   grid-template-columns: repeat(2, 139px);
-  gap: 2px;
-  background-color: #ffffff;
+  justify-content: space-between;
+
+  @media (min-width: 500px) and (max-width: $mobile-width-only) {
+    justify-content: space-evenly;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 60px 37px;
-    grid-template-columns: 180px 160px;
-    gap: 296px;
+    /* width: 708px; */
+    width: 92.2%;
+    padding: 62px 41px 60px;
+    grid-template-columns: 180px 165px;
+    gap: 290px;
+  }
+
+  @media (min-width: 900px) and (max-width: $tablet-width-only) {
+    justify-content: space-evenly;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     width: 565px;
-    padding: 56px 80px 42px;
-    grid-template-columns: 163px 120px;
+    max-height: 250px;
+    overflow: auto;
+    padding: 60px 60px 56px 80px;
+    grid-template-columns: 163px 175px;
     gap: 87px;
     background-color: #ffffff;
+  }
+}
+
+.contacts__wrapper--alt-style {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 43px;
   }
 }
 
@@ -55,7 +80,27 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: 0;
     text-align: left;
+  }
+}
+
+.contacts__address--alt-style {
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
+  }
+}
+
+.contacts__address-city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 19px;
+  }
+}
+
+.contacts__address-city--no-indent {
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 

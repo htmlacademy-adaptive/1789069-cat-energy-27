@@ -8,7 +8,10 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <title>Кэт энерджи: подбор программы</title>
 </head>
 <body class="page__body">
@@ -29,7 +32,7 @@
         </picture>
       </a>
     </div>
-    <nav class="navigation navigation--opened navigation--nojs">
+    <nav class="navigation navigation--closed navigation--nojs">
       <button class="navigation__toggle">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -57,16 +60,16 @@
             <fieldset class="form__group form__group--cat">
               <legend class="visually-hidden">Данные кота.</legend>
               <label class="form__control">
-                <span class="form__label">Имя:<sup>*</sup></span>
+                <span class="form__label">Имя:*</span>
                 <input class="form__input input input--cat" type="text" name="name" placeholder="Барсик" required>
               </label>
               <label class="form__control">
-                <span class="form__label">Вес(кг):<sup>*</sup></span>
-                <input class="form__input input input--cat" type="text" name="weight" placeholder="7" required>
+                <span class="form__label">Вес(кг):*</span>
+                <input class="form__input input input--cat" type="number" min="0" name="weight" placeholder="7" required>
               </label>
               <label class="form__control">
                 <span class="form__label">Возраст(лет):</span>
-                <input class="form__input input input--cat" type="text" name="age" placeholder="7">
+                <input class="form__input input input--cat" type="number" min="0" name="age" placeholder="7">
               </label>
             </fieldset>
             <fieldset class="form__group form__group--purpose">
@@ -97,17 +100,17 @@
             <legend class="form__title">Контактные данные (владельца кота)</legend>
             <div class="form__controls-owner-cat-wrapper">
               <label class="form__control">
-                <span class="form__label">E-mail:<sup>*</sup></span>
+                <span class="form__label">E-&nbsp;mail:*</span>
                 <input class="form__input form__input--email input input--owner-cat input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-                <svg class="form__input-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg class="form__input-icon" width="20" height="20" fill="none" stroke="#000000">
+                  <use xlink:href="img/sprite.svg#email"></use>
                 </svg>
               </label>
               <label class="form__control">
-                <span class="form__label">Телефон:<sup>*</sup></span>
+                <span class="form__label">Телефон:*</span>
                 <input class="form__input form__input--tel input input--owner-cat input--tel" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-                <svg class="form__input-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg class="form__input-icon" width="20" height="20" fill="none" stroke="#000000">
+                  <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
               </label>
             </div>
@@ -153,9 +156,11 @@
       </div>
     </section>
     <section class="location location--alt-bg">
-      <div class="location__contacts contacts contacts--alt-bg">
-        <h2 class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
-        <address class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8<br> Санкт-Петербург</address>
+      <div class="location__contacts contacts">
+        <div class="contacts__wrapper contacts__wrapper--alt-style">
+          <h2 class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
+          <address class="contacts__address contacts__address--alt-style">ул. Большая Конюшенная,&nbsp;д. 19/8 <span class="contacts__address-city contacts__address-city--no-indent">Санкт-Петербург</span></address>
+        </div>
       </div>
       <div class="location__map-wrapper">
         <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.396204277364!2d30.321066274256484!3d59.93949421156095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669461359726!5m2!1sru!2sru" width="320" height="362" style="border: 0;" title="Наше расположение на карте" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -178,7 +183,7 @@
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="#">
           <svg class="social__icon" width="28" height="22" fill="defaultColor" role="img">
-            <use xlink:href="img/sprite.svg#icon-vk"></use>
+            <use xlink:href="img/sprite.svg#vkontakte"></use>
           </svg>
           <span class="visually-hidden">В контакте.</span>
         </a>
@@ -186,7 +191,7 @@
       <li class="social__item">
         <a class="social__link social__link--youtube" href="#">
           <svg class="social__icon" width="28" height="22" fill="defaultColor" role="img">
-            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            <use xlink:href="img/sprite.svg#youtube"></use>
           </svg>
           <span class="visually-hidden">Ютуб.</span>
         </a>
@@ -194,7 +199,7 @@
       <li class="social__item">
         <a class="social__link social__link--telegram" href="#">
           <svg class="social__icon" width="28" height="22" fill="defaultColor" role="img">
-            <use xlink:href="img/sprite.svg#icon-tg"></use>
+            <use xlink:href="img/sprite.svg#telegram"></use>
           </svg>
           <span class="visually-hidden">Телеграм.</span>
         </a>
@@ -206,7 +211,7 @@
       </a>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Страница интенсива по адаптивной вёрстке HTML Academy">
         <svg class="copyright__icon" width="27" height="34" fill="defaultColor" role="img">
-          <use xlink:href="img/sprite.svg#icon-copyright"></use>
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>
       </a>
     </div>
