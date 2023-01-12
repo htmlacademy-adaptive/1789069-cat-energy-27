@@ -24,13 +24,11 @@
 }
 
 .advantages__wrapper {
-  /* width: 280px; */
   width: 87.5%;
   margin: 0 auto;
   padding: 0 0 49px;
 
   @media (min-width: $tablet-width) {
-    /* width: 708px; */
     width: 92.2%;
     padding: 0 0 90px 0;
     position: relative;
@@ -72,7 +70,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 247px 249px;
-    /* gap: 37px 138px; */
     row-gap: 37px;
     justify-content: space-between;
     padding-right: 75px;
