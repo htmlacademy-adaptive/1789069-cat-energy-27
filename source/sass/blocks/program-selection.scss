@@ -18,7 +18,8 @@
 }
 
 .program-selection__wrapper {
-  width: 280px;
+  /* width: 280px; */
+  width: 87.5%;
   margin: 0 auto;
   padding: 27px 0 32px 0;
   font-family: "Oswald", "Arial", sans-serif;
@@ -27,8 +28,9 @@
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
-    width: 708px;
-    padding: 64px 40px 72px 37px;
+    /* width: 708px; */
+    width: 92.2%;
+    padding: 64px 40px 70px 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,6 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
     padding-right: 897px;
   }
 }

@@ -92,23 +92,23 @@
 }
 
 .form__input[type="radio"] + .form__label {
-  gap: 15px;
+  gap: 17px;
 
   &::before {
     content: "";
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     outline: 1px solid #cdcdcd;
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
+    gap: 22px;
   }
 }
 
@@ -125,17 +125,17 @@
 }
 
 .form__input[type="checkbox"] + .form__label {
-  gap: 16px;
+  gap: 18px;
 
   &::before {
     content: "";
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     outline: 1px solid #cdcdcd;
 
     @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
     }
   }
 
@@ -175,7 +175,11 @@
   right: 15px;
 
   @media (min-width: $tablet-width) {
-    right: 18px;
+    right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 19px;
   }
 }
 
@@ -214,7 +218,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
+    gap: 22px;
     margin-bottom: 72px;
   }
 
@@ -298,7 +302,7 @@
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -308,11 +312,11 @@
 }
 
 .form__group--cat .form__control {
-  gap: 18px;
+  gap: 14px;
 }
 
 .form__group--owner-cat .form__control {
-  gap: 10px;
+  gap: 11px;
 
   @media (min-width: $tablet-width) {
     gap: 20px;
@@ -326,16 +330,16 @@
 }
 
 .form__list--purpose {
-  gap: 13px;
+  gap: 16px;
 }
 
 .form__list--additional {
-  gap: 13px;
+  gap: 15px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px 58px;
+    gap: 33px 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -370,7 +374,7 @@
 }
 
 .form__group--comment .form__title {
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
@@ -381,7 +385,7 @@
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 58px;
   }
 }
 
@@ -430,7 +434,7 @@
 .form__form-group-cat-and-purpose-wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(2, 569px);
+    grid-template-columns: repeat(2, 570px);
     gap: 80px;
     margin-bottom: 69px;
   }
