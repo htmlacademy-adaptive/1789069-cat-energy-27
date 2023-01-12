@@ -2,7 +2,7 @@
 
 .promo {
   /* stylelint-disable unit-no-unknown*/
-  background-image: linear-gradient(#68b738d9, #68b738d9), image-set("../img/index-background-promo@1x.webp" 1x, "../img/index-background-promo@1x.png" 1x, "../img/index-background-promo@2x.webp" 2x, "../img/index-background-promo@2x.png" 2x), linear-gradient(#0e140ad9, #264614d9, #0e140ad9);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../img/index-background-promo@1x.webp" 1x, "../img/index-background-promo@1x.png" 1x, "../img/index-background-promo@2x.webp" 2x, "../img/index-background-promo@2x.png" 2x), linear-gradient(rgba(14, 20, 10, 0.85), rgba(38, 70, 20, 0.85), rgba(14, 20, 10, 0.85));
   /* stylelint-enable unit-no-unknown*/
   background-repeat: no-repeat, no-repeat;
   background-size: auto 302px, auto 302px;
@@ -23,7 +23,7 @@
       top: -113px;
       right: 0;
       /* stylelint-disable unit-no-unknown*/
-      background-image: linear-gradient(#68b738d9, #68b738d9), image-set("../img/index-background-promo-desktop@1x.webp" 1x, "../img/index-background-promo-desktop@1x.png" 1x, "../img/index-background-promo-desktop@2x.webp" 2x, "../img/index-background-promo-desktop@2x.png" 2x), linear-gradient(#0e140ad9, #264614d9, #0e140ad9);
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../img/index-background-promo-desktop@1x.webp" 1x, "../img/index-background-promo-desktop@1x.png" 1x, "../img/index-background-promo-desktop@2x.webp" 2x, "../img/index-background-promo-desktop@2x.png" 2x), linear-gradient(rgba(14, 20, 10, 0.85), rgba(38, 70, 20, 0.85), rgba(14, 20, 10, 0.85));
       /* stylelint-enable unit-no-unknown*/
       background-repeat: no-repeat, no-repeat;
       background-size: auto 694px, auto 694px;
