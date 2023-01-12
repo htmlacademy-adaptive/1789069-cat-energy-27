@@ -1,6 +1,6 @@
 @import "../global/variables.scss";
 
-.advantage__description {
+.advantage {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -13,59 +13,9 @@
     min-height: 60px;
     background-color: #68b738;
   }
-}
 
-.advantage--useful .advantage__description::before {
-  background-image: url("../img/icon-leaf.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.advantage--powder .advantage__description::before {
-  background-image: url("../img/icon-powder.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.advantage--nutration .advantage__description::before {
-  background-image: url("../img/icon-eat.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.advantage--time .advantage__description::before {
-  background-image: url("../img/icon-time.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-@media (min-width: $tablet-width) {
-  .advantage--useful .advantage__description {
-    background-image: url("../img/advantage-1.png");
-    background-repeat: no-repeat;
-    background-position: 118px 40px;
-  }
-
-  .advantage--powder .advantage__description {
-    background-image: url("../img/advantage-2.png");
-    background-repeat: no-repeat;
-    background-position: 112px 40px;
-  }
-
-  .advantage--nutration .advantage__description {
-    background-image: url("../img/advantage-3.png");
-    background-repeat: no-repeat;
-    background-position: 113px 40px;
-  }
-
-  .advantage--time .advantage__description {
-    background-image: url("../img/advantage-4.png");
-    background-repeat: no-repeat;
-    background-position: 113px 40px;
-  }
-
-  .advantage__description {
-    padding: 40px 26px 57px 0;
+  @media (min-width: $tablet-width) {
+    padding: 40px 7px 57px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -77,5 +27,71 @@
       width: 80px;
       height: 80px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0 57px;
+  }
+}
+
+.advantage--useful {
+  &::before {
+    background-image: url("../img/icon-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: image-set("../img/advantage-1.webp" 1x, "../img/advantage-1.png" 1x);
+    background-repeat: no-repeat;
+    background-position: 123px 40px;
+  }
+}
+
+.advantage--powder {
+  &::before {
+    background-image: url("../img/icon-powder.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: image-set("../img/advantage-2.webp" 1x, "../img/advantage-2.png" 1x);
+    background-repeat: no-repeat;
+    background-position: 123px 40px;
+  }
+}
+
+.advantage--nutration {
+  &::before {
+    background-image: url("../img/icon-eat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: image-set("../img/advantage-3.webp" 1x, "../img/advantage-3.png" 1x);
+    background-repeat: no-repeat;
+    background-position: 123px 40px;
+  }
+}
+
+.advantage--time {
+  @media (max-width: $mobile-width-only) {
+    & br {
+      display: none;
+    }
+  }
+
+  &::before {
+    background-image: url("../img/icon-time.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: image-set("../img/advantage-4.webp" 1x, "../img/advantage-4.png" 1x);
+    background-repeat: no-repeat;
+    background-position: 123px 40px;
   }
 }

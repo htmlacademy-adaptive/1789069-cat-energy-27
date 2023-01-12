@@ -4,24 +4,20 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
   padding: 0 0 20px 0;
-}
 
-@media (min-width: $tablet-width) {
-  .applications {
-    width: 708px;
+  @media (min-width: $tablet-width) {
+    width: 92.2%;
     gap: 30px;
     padding: 0 0 45px 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .applications {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     flex-direction: row;
-    gap: 80px;
+    justify-content: space-between;
     padding-bottom: 71px;
   }
 }

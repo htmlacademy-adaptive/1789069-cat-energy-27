@@ -8,7 +8,7 @@
   position: absolute;
   padding: 0;
   margin: 0;
-  top: -30px;
+  top: -27px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -17,17 +17,23 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.navigation--closed .navigation__toggle::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+.navigation--closed .navigation__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
 }
 
 .navigation--closed .navigation__list {
@@ -43,11 +49,13 @@
   width: 100%;
   background-color: #ffffff;
   z-index: 1;
+  padding-top: 16px;
 
   @media (min-width: $tablet-width) {
     position: static;
     width: auto;
     background-color: transparent;
+    padding-top: 0;
   }
 }
 
@@ -55,7 +63,7 @@
   width: 24px;
   height: 24px;
   right: 20px;
-  top: -33px;
+  top: -30px;
 
   &::before,
   &::after {
@@ -92,11 +100,5 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .navigation__toggle {
-    display: none;
   }
 }

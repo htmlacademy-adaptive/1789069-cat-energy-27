@@ -6,6 +6,18 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
+    max-width: 480px;
+    flex-direction: row;
+    gap: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    max-width: 680px;
+  }
 }
 
 .nav-list__item {
@@ -19,6 +31,10 @@
     width: 100%;
     height: 1px;
     background-color: #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
   }
 }
 
@@ -32,18 +48,10 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-@media (min-width: $tablet-width) {
-  .nav-list {
-    max-width: 480px;
-    flex-direction: row;
-    gap: 25px;
-  }
-
-  .nav-list__link {
+  @media (min-width: $tablet-width) {
     position: relative;
-    padding: 10px;
+    padding: 10px 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -57,36 +65,36 @@
     }
   }
 
-  .nav-list__link--current::before {
-    position: absolute;
-    content: "";
-    height: 2px;
-    left: 10px;
-    right: 10px;
-    bottom: 0;
-    background-color: #68b738;
-  }
-
-  .nav-list__item::before {
-    content: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .nav-list {
-    max-width: 680px;
-  }
-
-  .nav-list__link {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
 
-  .nav-list--index-nav-list .nav-list__link {
+.nav-list__link--current {
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      height: 2px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #68b738;
+    }
+  }
+}
+
+.nav-list--index-nav-list .nav-list__link {
+  @media (min-width: $desktop-width) {
     color: #ffffff;
   }
+}
 
-  .nav-list--index-nav-list .nav-list__link--current::before {
-    background-color: #ffffff;
+.nav-list--index-nav-list .nav-list__link--current {
+  &::before {
+    @media (min-width: $desktop-width) {
+      background-color: #ffffff;
+    }
   }
 }

@@ -26,8 +26,15 @@
 }
 
 .button--promo {
+  padding: 11px 44px;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button--product {
@@ -36,6 +43,7 @@
 }
 
 .button--more-products {
+  padding: 10px 44px;
   background-color: #f2f2f2;
   color: #444444;
 
@@ -47,6 +55,10 @@
     background-color: #ebebeb;
     color: rgba(68, 68, 68, 0.3);
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 38px;
+  }
 }
 
 .button--additional-product {
@@ -54,26 +66,16 @@
   padding-bottom: 10px;
 }
 
-@media (min-width: $tablet-width) {
-  .button--promo {
-    padding: 14px 26px;
+.button--form {
+  padding: 10px 44px;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 45px;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .button--more-products {
-    padding: 10px 40px;
-  }
-
-  .button--form {
-    padding: 14px 45px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .button--form {
-    padding: 14px 188px;
+  @media (min-width: $desktop-width) {
+    padding: 16px 188px;
   }
 }
