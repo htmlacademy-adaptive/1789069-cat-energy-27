@@ -77,12 +77,6 @@
 }
 
 .advantage--time {
-  @media (max-width: $mobile-width-only) {
-    & br {
-      display: none;
-    }
-  }
-
   &::before {
     background-image: url("../img/icon-time.svg");
     background-repeat: no-repeat;

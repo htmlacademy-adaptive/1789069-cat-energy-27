@@ -13,14 +13,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
-
     &::after {
       content: "";
       position: absolute;
       width: 50%;
       height: 694px;
-      top: -113px;
+      top: 0;
       right: 0;
       /* stylelint-disable unit-no-unknown*/
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../img/index-background-promo-desktop@1x.webp" 1x, "../img/index-background-promo-desktop@1x.png" 1x, "../img/index-background-promo-desktop@2x.webp" 2x, "../img/index-background-promo-desktop@2x.png" 2x), linear-gradient(rgba(14, 20, 10, 0.85), rgba(38, 70, 20, 0.85), rgba(14, 20, 10, 0.85));
