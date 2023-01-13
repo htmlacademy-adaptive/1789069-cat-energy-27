@@ -86,3 +86,13 @@
     gap: 80px;
   }
 }
+
+.advantages__item-text {
+  margin: 0;
+}
+
+.advantages__item-space {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

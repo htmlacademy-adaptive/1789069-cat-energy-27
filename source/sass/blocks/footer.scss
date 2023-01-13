@@ -9,7 +9,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 39px 0 22px;
+  padding: 39px 0 40px;
 
   @media (min-width: $tablet-width) {
     width: 92.2%;
@@ -21,7 +21,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 66px 0 58px;
+    padding: 66px 0;
   }
 }
 
